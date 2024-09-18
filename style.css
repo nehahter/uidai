@@ -1,0 +1,270 @@
+/* Fixed Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header stays above other content */
+    background-color: white; /* Maintain the background to prevent see-through */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds shadow for better visibility */
+}
+
+body {
+    padding-top: 120px; /* Adjust this value based on the total height of your fixed header */
+}
+
+/* Rest of the styles remain the same */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Navbar styles */
+header {
+    width: 100%;
+}
+
+/* White part of the navbar */
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 100px; /* Adjusted to move content towards the center */
+}
+
+/* Emblem image styling (reduced size) */
+.navbar-emblem {
+    height: 50px; /* Reduced height */
+    width: auto;
+}
+
+/* Title styling for 'Unique Identification Authority of India' */
+.navbar-title {
+    font-size: 24px;  /* Increased font size to match */
+    font-weight: 700; /* Extra bold to match the image */
+    color: #0c528c;
+}
+
+/* Aadhaar logo styling (reduced size) */
+.navbar-logo {
+    height: 40px; /* Reduced height */
+    width: auto;
+}
+
+/* Gradient blue navbar (second horizontal bar) */
+.navbar-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #01074c, #1aaad7); /* Gradient from dark blue to lighter blue */
+    color: #fff;
+    padding: 10px 100px; /* Adjusted to move content towards the center */
+}
+
+/* 'myAadhaar' section of the navbar */
+.myAadhaar-logo {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for 4box.png icon next to myAadhaar text */
+.myAadhaar-logo img {
+    height: 20px;
+    margin-right: 8px; /* Spacing between image and text */
+}
+
+/* Breadcrumb styling */
+.breadcrumb {
+    font-size: 14px;
+    margin-left: 10px;
+    color: #ddd;
+}
+
+/* Language selector on the right side of the navbar */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Language dropdown styling */
+.language-selector {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.language-selector i {
+    margin-left: 5px;
+}
+
+
+/* Main content layout */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+
+/* Left part (form container) styles */
+.form-container {
+    width: 55%;
+    padding: 20px;  /* Reduced padding for more compact appearance */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0; /* Ensures the container ends right below the Send OTP button */
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Ensures the form stretches properly within the container */
+}
+
+/* Added thin horizontal color bar */
+.horizontal-bar {
+    height: 5px;
+    background: linear-gradient(to right, #01074c, #1aaad7); /* Gradient matching the navbar */
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px; /* Adds space after the bar */
+}
+
+/* Font sizes for form elements */
+label {
+    font-size: 20px; /* Slightly larger font */
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 16px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px; /* Increased font size */
+}
+
+/* Radio button group */
+.input-radio-group {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    font-size: 18px; /* Increased font size */
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Captcha image and container */
+.captcha-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.captcha-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+/* Send OTP button */
+.send-otp-btn {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(to right, #01074c, #1aaad7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.send-otp-btn:hover {
+    background: linear-gradient(to right, #1aaad7, #01074c);
+}
+
+
+/* Right part (FAQ section) remains unchanged */
+.faq-container {
+    width: 40%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ section styling */
+.faq-container h2 {
+    font-size: 22px; /* Increased font size */
+    color: #0c528c;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.faq-container h2 i {
+    margin-right: 10px; /* Add space between icon and text */
+}
+
+.faq-item {
+    margin-bottom: 12px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 12px; /* Slightly larger padding */
+    text-align: left;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Increased font size */
+    font-weight: bold; /* Bold font for questions */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question span {
+    font-size: 18px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px; /* Increased font size */
+}
+
+/* FAQ section dropdown functionality */
+.faq-question.active + .faq-answer {
+    display: block;
+}
+
+/* Add a hover effect for buttons */
+.faq-question:hover {
+    background-color: #e0e0e0;
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(to right, #01074c, #1aaad7); /* Matching navbar colors */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px; /* Increased font size for footer */
+    bottom: 0;
+    width: 100%;
+}

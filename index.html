@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIDAI Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- White part of navbar -->
+        <div class="navbar-top">
+            <img src="img/emblem.png" alt="Emblem" class="navbar-emblem">
+            <div class="navbar-title">
+                Unique Identification Authority of India
+            </div>
+            <img src="img/logo.png" alt="Aadhaar Logo" class="navbar-logo">
+        </div>
+
+        <!-- Gradient blue part of navbar -->
+        <div class="navbar-bottom">
+            <div class="navbar-left">
+                <div class="myAadhaar-logo">
+                    <img src="img/4box.png" alt="4box icon">myAadhaar
+                </div>
+            </div>
+            <div class="navbar-right">
+                <a href="#" class="language-selector">English <i class="fas fa-caret-down"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content area below the navbar -->
+    <div class="main-container">
+        <!-- Left Part: Form Section -->
+        <section class="form-container">
+            <!-- Thin gradient color bar -->
+            <div class="horizontal-bar"></div>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="aadhaar">Select 12 digit Aadhaar Number / 16 digit Virtual ID (VID) Number / 28 digit Enrollment ID (EID) Number</label>
+                    <div class="input-radio-group">
+                        <input type="radio" id="aadhaar" name="id_type" checked> Aadhaar Number
+                        <input type="radio" name="id_type"> Enrolment ID Number
+                        <input type="radio" name="id_type"> Virtual ID Number
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="aadhaar-number">Enter Aadhaar Number</label>
+                    <input type="text" id="aadhaar-number" name="aadhaar_number" placeholder="Enter Aadhaar Number">
+                </div>
+                <br>
+                <!-- Captcha part -->
+                <div class="form-group captcha-group">
+                    <label for="captcha">Enter Captcha</label>
+                    <div class="captcha-container">
+                        <input type="text" id="captcha" name="captcha" placeholder="Enter Captcha" class="captcha-input">
+                        <img src="img/captchaph.png" alt="Captcha" class="captcha-image">
+                    </div>
+                </div>
+                <br>
+                <!-- Send OTP button -->
+                <button type="submit" class="send-otp-btn">Send OTP</button>
+            </form>
+            
+        </section>
+    
+            <!-- Right Part: FAQ Section (Updated with icon) -->
+            <section class="faq-container">
+                <h2><i class="fa fa-question-circle" aria-hidden="true"></i> Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-question">What is e-Aadhaar? <span>&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>e-Aadhaar is a password protected electronic copy of Aadhaar, digitally signed by UIDAI.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is e-Aadhaar equally valid like physical copy of Aadhaar? <span>&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>As per Aadhaar Act, e-Aadhaar is equally valid like Physical Copy of Aadhaar for all purposes. For validity of eAadhaar, please visit UIDAI circular- <a href="https://uidai.gov.in/images/ uidai_om_on_e_aadhaar_validity.pdf">https://uidai.gov.in/images/ uidai_om_on_e_aadhaar_validity.pdf</a></p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What is Masked Aadhaar? <span>&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>Masked Aadhaar implies replacing of first 8 digits of Aadhaar number with “xxxx-xxxx” while only last 4 digits of the Aadhaar Number are visible.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How to validate digital signatures in e-Aadhaar? <span>&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>Please visit Aadhaar YouTube Channel and watch tutorial link on https://youtu.be/aVNfUNIccZs?si=ByW1O6BIPMwc0seL</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What is the Password of e-Aadhaar? <span>&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>Password of eAadhaar is a combination of the first 4 letters of name in CAPITAL and the year of birth (YYYY).
+<br><br>
+                            For Example:
+                            <br><br> 
+                            Example 1<br>
+                            Name: SURESH KUMAR<br>
+                            Year of Birth: 1990<br>
+                            Password: SURE1990<br>
+                            <br>
+
+                            Example 2<br>
+                            Name: SAI KUMAR<br>
+                            Year of Birth: 1990<br>
+                            Password: SAIK1990<br>
+                            <br>
+
+                            Example 3<br>
+                            Name: P. KUMAR<br>
+                            Year of Birth: 1990<br>
+                            Password: P.KU1990<br>
+                            <br>
+
+                            Example 4<br>
+                            Name: RIA<br>
+                            Year of Birth: 1990<br>
+                            Password: RIA1990<br>
+                            </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What supporting software needed to open e-Aadhaar? <span>&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>Resident needs 'Adobe Reader' to view e-Aadhaar. You have 'Adobe Reader' installed in your System. To install Adobe Reader in the System
+                            visit <a href="//get.adobe.com/reader/">https://get.adobe.com/reader/</a></p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How can an Aadhaar Number holder download e-Aadhaar? <span>&#9660;</span></button>
+                    <div class="faq-answer">
+                        <p>An Aadhaar Number holder can download e-Aadhaar by following three ways.<br><br>
+                            <b>By Using Enrollment Number:<br><br>
+                            By Using Aadhaar No:<br><br>
+                            By using VID:<br><br></b>
+                            
+                            OTP for downloading eAadhaar will be received on registered mobile number.</p>
+                    </div>
+                </div>
+                <div class="faq-item"></div>
+                <button class="faq-question">From where an Aadhaar number holder can download e-Aadhaar? <span>&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>Aadhaar Number holder can download e-Aadhaar by visiting UIDAI's MyAadhaar portal - <a href="//myaadhaar.uidai.gov.in">//myaadhaar.uidai.gov.in</a> or by using mAadhaar app for mobile phones.</p>
+                </div>
+            </div>
+            </section>
+        </div>
+
+    <!-- Footer with navbar colors -->
+    <footer>
+        Made by <b>mettleX</b>
+    </footer>
+
+    <script>
+        // FAQ accordion functionality
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                // Toggle active class
+                question.classList.toggle('active');
+                
+                // Toggle the answer visibility
+                const answer = question.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+    
+</body>
